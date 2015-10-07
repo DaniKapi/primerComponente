@@ -83,6 +83,16 @@ void SpecificWorker::compute()
     }
     
 }
+
+
+
+void SpecificWorker::newAprilTag(const tagsList& tags)
+{
+  for (auto t: tags)
+    qDebug() << t.id;
+  
+}
+
 /*
  * setSpeedBase
  * 

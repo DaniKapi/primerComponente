@@ -41,13 +41,33 @@ public:
 	SpecificWorker(MapPrx& mprx);	
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
+	void newAprilTag(const tagsList &tags);
 
 
 public slots:
 	void compute(); 	
 
 private:
-	
+
+  struct ListaMarcas
+  {
+    typedef struct 
+    {
+      int id;
+      float tx;
+      float ty;
+      float tz;
+      float rx;
+      float ry;
+      float rz;
+    } Marca;
+    
+    std::vector<Marca> lista;
+    QMutex mutex;
+    void add(){};
+    Marca get(){};
+  };
+  
 };
 
 #endif

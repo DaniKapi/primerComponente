@@ -1,9 +1,14 @@
 import "/robocomp/interfaces/IDSLs/DifferentialRobot.idsl";
 import "/robocomp/interfaces/IDSLs/Laser.idsl";
+import "/robocomp/interfaces/IDSLs/AprilTags.idsl";
+
+
 Component SegundoComponente{
     Communications{
         requires DifferentialRobot, Laser;
+        subscribesTo AprilTags;
     };
+    
 gui Qt(QWidget);
 language Cpp; //language Python;
 };

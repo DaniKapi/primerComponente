@@ -34,33 +34,6 @@
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
 
-
-struct ListaMarcas
-  {
-    typedef struct 
-    {
-      int id;
-      float tx;
-      float ty;
-      float tz;
-      float rx;
-      float ry;
-      float rz;
-    } Marca;
-    
-    QMap<int,Marca> lista;
-    QMutex mutex;
-    void add(Marca mar)
-    {
-      QMutexLocker ml(&mutex);
-      lista.insert(mar.id, mar);
-	
-    };
-    Marca get(int id){
-      return lista.value(id);
-    };
-  };
-
 class SpecificWorker : public GenericWorker
 {
 Q_OBJECT
@@ -68,24 +41,14 @@ public:
 	SpecificWorker(MapPrx& mprx);	
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
+
 	void newAprilTag(const tagsList &tags);
-	
 
 public slots:
 	void compute(); 	
-	void movimiento();
-	void moverAcero();
-	void moverAuno();
-	void moverAdos();
-	void moverAtres();
-	void copiar(tag t, ListaMarcas::Marca &y);
 
 private:
-  int estado;
-  
-  
-  ListaMarcas marcas;
-  
+	
 };
 
 #endif

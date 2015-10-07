@@ -23,29 +23,12 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
-
+  this->estado=0;
 }
 
-/**
-* \brief Default destructor
-*/
-SpecificWorker::~SpecificWorker()
+void SpecificWorker::movimiento()
 {
-	
-}
-
-bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
-{
-	
-	timer.start(Period);
-
-	return true;
-}
-
-void SpecificWorker::compute()
-{
-
-    const float threshold = 400; //millimeters -- Limite 
+  const float threshold = 400; //millimeters -- Limite 
     float der = 0.9;  //rads per second -- Gira a la derecha
     float izq = -0.9;  //rads per second -- Gira a la izquierda
     
@@ -81,17 +64,94 @@ void SpecificWorker::compute()
     {
         std::cout << ex << std::endl;
     }
+}
+
+void SpecificWorker::moverAcero()
+{
+    std::cout<<"moviendo a cero"<<endl;
+}
+
+
+void SpecificWorker::moverAuno()
+{
+     std::cout<<"moviendo a uno"<<endl;
+}
+
+void SpecificWorker::moverAdos()
+{
+     std::cout<<"moviendo a dos"<<endl;
+}
+
+void SpecificWorker::moverAtres()
+{
+     std::cout<<"moviendo a tres"<<endl;
+}
+
+
+
+
+bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
+{
+	
+	timer.start(Period);
+
+	return true;
+}
+
+void SpecificWorker::compute()
+{
+    this->movimiento();
+	switch(this->estado){
+	  case 0:
+	    moverAcero();
+	    this->estado++;
+	  break;
+	  case 1: 
+	    moverAuno();
+	    this->estado++;
+	  break;
+	  case 2:
+	    moverAdos();
+	    this->estado++;
+	    break;
+	  case 3:
+	    moverAtres();
+	    this->estado++;
+	  break;
+	}
     
 }
+
+void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
+{
+
+  y.id=t.id;
+  y.tx=t.tx;
+  y.ty=t.ty;
+  y.tz=t.tz;
+  y.rx=t.rx;
+  y.ry=t.ry;
+  y.rz=t.rz;
+
+}
+
 
 
 
 void SpecificWorker::newAprilTag(const tagsList& tags)
 {
-  for (auto t: tags)
+  for (auto t: tags){
     qDebug() << t.id;
+    ListaMarcas::Marca x;
+    this->copiar(t,x);
+    marcas.add(x);
+  }
+  
+  
   
 }
+
+
 
 /*
  * setSpeedBase
@@ -101,7 +161,12 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
  * 
  */
 
-
-
+/**
+* \brief Default destructor
+*/
+SpecificWorker::~SpecificWorker()
+{
+	
+}
 
 

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/salabeta/daniKapi/segundoComponente
+CMAKE_SOURCE_DIR = /home/salabeta/DaniKapi/segundocomponente
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/salabeta/daniKapi/segundoComponente
+CMAKE_BINARY_DIR = /home/salabeta/DaniKapi/segundocomponente
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/SegundoComponente.dir/depend.make
@@ -50,81 +50,81 @@ include src/CMakeFiles/SegundoComponente.dir/progress.make
 include src/CMakeFiles/SegundoComponente.dir/flags.make
 
 src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/salabeta/daniKapi/segundoComponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
+	cd /home/salabeta/DaniKapi/segundocomponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 
 src/DifferentialRobot.cpp: /opt/robocomp/interfaces/DifferentialRobot.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating DifferentialRobot.cpp and DifferentialRobot.h from DifferentialRobot.ice"
-	cd /home/salabeta/daniKapi/segundoComponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
+	cd /home/salabeta/DaniKapi/segundocomponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
 
 src/DifferentialRobot.h: src/DifferentialRobot.cpp
 
 src/Laser.cpp: /opt/robocomp/interfaces/Laser.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Laser.cpp and Laser.h from Laser.ice"
-	cd /home/salabeta/daniKapi/segundoComponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Laser.ice --output-dir .
+	cd /home/salabeta/DaniKapi/segundocomponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Laser.ice --output-dir .
 
 src/Laser.h: src/Laser.cpp
 
 src/AprilTags.cpp: /opt/robocomp/interfaces/AprilTags.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AprilTags.cpp and AprilTags.h from AprilTags.ice"
-	cd /home/salabeta/daniKapi/segundoComponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AprilTags.ice --output-dir .
+	cd /home/salabeta/DaniKapi/segundocomponente/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AprilTags.ice --output-dir .
 
 src/AprilTags.h: src/AprilTags.cpp
 
 src/moc_specificworker.cxx: src/specificworker.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_specificworker.cxx"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/daniKapi/segundoComponente/src/moc_specificworker.cxx_parameters
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/DaniKapi/segundocomponente/src/moc_specificworker.cxx_parameters
 
 src/moc_specificmonitor.cxx: src/specificmonitor.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_specificmonitor.cxx"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/daniKapi/segundoComponente/src/moc_specificmonitor.cxx_parameters
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/DaniKapi/segundocomponente/src/moc_specificmonitor.cxx_parameters
 
 src/moc_genericmonitor.cxx: src/genericmonitor.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_genericmonitor.cxx"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/daniKapi/segundoComponente/src/moc_genericmonitor.cxx_parameters
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/DaniKapi/segundocomponente/src/moc_genericmonitor.cxx_parameters
 
 src/moc_commonbehaviorI.cxx: src/commonbehaviorI.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_commonbehaviorI.cxx"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/daniKapi/segundoComponente/src/moc_commonbehaviorI.cxx_parameters
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/DaniKapi/segundocomponente/src/moc_commonbehaviorI.cxx_parameters
 
 src/moc_genericworker.cxx: src/genericworker.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_genericworker.cxx"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/daniKapi/segundoComponente/src/moc_genericworker.cxx_parameters
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/DaniKapi/segundocomponente/src/moc_genericworker.cxx_parameters
 
 src/moc_apriltagsI.cxx: src/apriltagsI.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_apriltagsI.cxx"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/daniKapi/segundoComponente/src/moc_apriltagsI.cxx_parameters
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/salabeta/DaniKapi/segundocomponente/src/moc_apriltagsI.cxx_parameters
 
 src/ui_mainUI.h: src/mainUI.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mainUI.h"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/salabeta/daniKapi/segundoComponente/src/ui_mainUI.h /home/salabeta/daniKapi/segundoComponente/src/mainUI.ui
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/salabeta/DaniKapi/segundocomponente/src/ui_mainUI.h /home/salabeta/DaniKapi/segundocomponente/src/mainUI.ui
 
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/specificworker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/specificworker.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/specificworker.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/specificworker.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/specificworker.cpp
 
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/specificworker.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/specificworker.cpp > CMakeFiles/SegundoComponente.dir/specificworker.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/specificworker.cpp > CMakeFiles/SegundoComponente.dir/specificworker.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/specificworker.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/specificworker.cpp -o CMakeFiles/SegundoComponente.dir/specificworker.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/specificworker.cpp -o CMakeFiles/SegundoComponente.dir/specificworker.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o.requires
@@ -137,17 +137,17 @@ src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/specificmonitor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/specificmonitor.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.cpp
 
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/specificmonitor.cpp > CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.cpp > CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/specificmonitor.cpp -o CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.cpp -o CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.requires
@@ -160,17 +160,17 @@ src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.provides.build: src/C
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o -c /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o -c /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
@@ -183,17 +183,17 @@ src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o -c /home/salabeta/robocomp/classes/qlog/qlog.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o -c /home/salabeta/robocomp/classes/qlog/qlog.cpp
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/qlog/qlog.cpp > CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/qlog/qlog.cpp > CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
@@ -206,17 +206,17 @@ src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cp
 
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/main.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/main.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/main.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/main.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/main.cpp
 
 src/CMakeFiles/SegundoComponente.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/main.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/main.cpp > CMakeFiles/SegundoComponente.dir/main.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/main.cpp > CMakeFiles/SegundoComponente.dir/main.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/main.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/main.cpp -o CMakeFiles/SegundoComponente.dir/main.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/main.cpp -o CMakeFiles/SegundoComponente.dir/main.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/main.cpp.o.requires
@@ -229,17 +229,17 @@ src/CMakeFiles/SegundoComponente.dir/main.cpp.o.provides.build: src/CMakeFiles/S
 
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/genericmonitor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/genericmonitor.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.cpp
 
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/genericmonitor.cpp > CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.cpp > CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/genericmonitor.cpp -o CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.cpp -o CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o.requires
@@ -252,17 +252,17 @@ src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/commonbehaviorI.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.cpp
 
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/commonbehaviorI.cpp > CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.cpp > CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/commonbehaviorI.cpp -o CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.cpp -o CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o.requires
@@ -275,17 +275,17 @@ src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o.provides.build: src/C
 
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/genericworker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/genericworker.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/genericworker.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/genericworker.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/genericworker.cpp
 
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/genericworker.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/genericworker.cpp > CMakeFiles/SegundoComponente.dir/genericworker.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/genericworker.cpp > CMakeFiles/SegundoComponente.dir/genericworker.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/genericworker.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/genericworker.cpp -o CMakeFiles/SegundoComponente.dir/genericworker.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/genericworker.cpp -o CMakeFiles/SegundoComponente.dir/genericworker.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o.requires
@@ -298,17 +298,17 @@ src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o.provides.build: src/CMa
 
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/apriltagsI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/apriltagsI.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.cpp
 
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/apriltagsI.cpp > CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.cpp > CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/apriltagsI.cpp -o CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.cpp -o CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o.requires
@@ -321,17 +321,17 @@ src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o: src/CommonBehavior.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/CommonBehavior.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/CommonBehavior.cpp
 
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/CommonBehavior.cpp > CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/CommonBehavior.cpp > CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/CommonBehavior.cpp -o CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/CommonBehavior.cpp -o CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o.requires
@@ -344,17 +344,17 @@ src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/DifferentialRobot.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/DifferentialRobot.cpp
 
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/DifferentialRobot.cpp > CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/DifferentialRobot.cpp > CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/DifferentialRobot.cpp -o CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/DifferentialRobot.cpp -o CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o.requires
@@ -367,17 +367,17 @@ src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o.provides.build: src
 
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o: src/Laser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/Laser.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/Laser.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/Laser.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/Laser.cpp
 
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/Laser.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/Laser.cpp > CMakeFiles/SegundoComponente.dir/Laser.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/Laser.cpp > CMakeFiles/SegundoComponente.dir/Laser.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/Laser.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/Laser.cpp -o CMakeFiles/SegundoComponente.dir/Laser.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/Laser.cpp -o CMakeFiles/SegundoComponente.dir/Laser.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o.requires
@@ -390,17 +390,17 @@ src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o: src/AprilTags.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o -c /home/salabeta/daniKapi/segundoComponente/src/AprilTags.cpp
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/AprilTags.cpp
 
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/AprilTags.cpp.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/AprilTags.cpp > CMakeFiles/SegundoComponente.dir/AprilTags.cpp.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/AprilTags.cpp > CMakeFiles/SegundoComponente.dir/AprilTags.cpp.i
 
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/AprilTags.cpp.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/AprilTags.cpp -o CMakeFiles/SegundoComponente.dir/AprilTags.cpp.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/AprilTags.cpp -o CMakeFiles/SegundoComponente.dir/AprilTags.cpp.s
 
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o.requires
@@ -413,17 +413,17 @@ src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/moc_specificworker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o -c /home/salabeta/daniKapi/segundoComponente/src/moc_specificworker.cxx
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/src/moc_specificworker.cxx
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/moc_specificworker.cxx > CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/moc_specificworker.cxx > CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.i
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/moc_specificworker.cxx -o CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/moc_specificworker.cxx -o CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.s
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o.requires
@@ -436,17 +436,17 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o.provides.build: sr
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/moc_specificmonitor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o -c /home/salabeta/daniKapi/segundoComponente/src/moc_specificmonitor.cxx
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/src/moc_specificmonitor.cxx
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/moc_specificmonitor.cxx > CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/moc_specificmonitor.cxx > CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.i
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/moc_specificmonitor.cxx -o CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/moc_specificmonitor.cxx -o CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.s
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o.requires
@@ -459,17 +459,17 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o.provides.build: s
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/moc_genericmonitor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o -c /home/salabeta/daniKapi/segundoComponente/src/moc_genericmonitor.cxx
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/src/moc_genericmonitor.cxx
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/moc_genericmonitor.cxx > CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/moc_genericmonitor.cxx > CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.i
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/moc_genericmonitor.cxx -o CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/moc_genericmonitor.cxx -o CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.s
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o.requires
@@ -482,17 +482,17 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o.provides.build: sr
 
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/moc_commonbehaviorI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o -c /home/salabeta/daniKapi/segundoComponente/src/moc_commonbehaviorI.cxx
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/src/moc_commonbehaviorI.cxx
 
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/moc_commonbehaviorI.cxx > CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/moc_commonbehaviorI.cxx > CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.i
 
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/moc_commonbehaviorI.cxx -o CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/moc_commonbehaviorI.cxx -o CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.s
 
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o.requires
@@ -505,17 +505,17 @@ src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o.provides.build: s
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/moc_genericworker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o -c /home/salabeta/daniKapi/segundoComponente/src/moc_genericworker.cxx
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/src/moc_genericworker.cxx
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/moc_genericworker.cxx > CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/moc_genericworker.cxx > CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.i
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/moc_genericworker.cxx -o CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/moc_genericworker.cxx -o CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.s
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o.requires
@@ -528,17 +528,17 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o.provides.build: src
 
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/moc_apriltagsI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/daniKapi/segundoComponente/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o -c /home/salabeta/daniKapi/segundoComponente/src/moc_apriltagsI.cxx
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/src/moc_apriltagsI.cxx
 
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.i"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/daniKapi/segundoComponente/src/moc_apriltagsI.cxx > CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.i
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/moc_apriltagsI.cxx > CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.i
 
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.s"
-	cd /home/salabeta/daniKapi/segundoComponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/daniKapi/segundoComponente/src/moc_apriltagsI.cxx -o CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.s
+	cd /home/salabeta/DaniKapi/segundocomponente/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/moc_apriltagsI.cxx -o CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.s
 
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o.requires:
 .PHONY : src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o.requires
@@ -604,7 +604,7 @@ bin/SegundoComponente: /usr/lib/x86_64-linux-gnu/libQtXml.so
 bin/SegundoComponente: /usr/lib/x86_64-linux-gnu/libQtCore.so
 bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/SegundoComponente"
-	cd /home/salabeta/daniKapi/segundoComponente/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SegundoComponente.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/salabeta/DaniKapi/segundocomponente/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SegundoComponente.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/SegundoComponente.dir/build: bin/SegundoComponente
@@ -632,7 +632,7 @@ src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.
 .PHONY : src/CMakeFiles/SegundoComponente.dir/requires
 
 src/CMakeFiles/SegundoComponente.dir/clean:
-	cd /home/salabeta/daniKapi/segundoComponente/src && $(CMAKE_COMMAND) -P CMakeFiles/SegundoComponente.dir/cmake_clean.cmake
+	cd /home/salabeta/DaniKapi/segundocomponente/src && $(CMAKE_COMMAND) -P CMakeFiles/SegundoComponente.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/SegundoComponente.dir/clean
 
 src/CMakeFiles/SegundoComponente.dir/depend: src/CommonBehavior.cpp
@@ -650,6 +650,6 @@ src/CMakeFiles/SegundoComponente.dir/depend: src/moc_commonbehaviorI.cxx
 src/CMakeFiles/SegundoComponente.dir/depend: src/moc_genericworker.cxx
 src/CMakeFiles/SegundoComponente.dir/depend: src/moc_apriltagsI.cxx
 src/CMakeFiles/SegundoComponente.dir/depend: src/ui_mainUI.h
-	cd /home/salabeta/daniKapi/segundoComponente && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/salabeta/daniKapi/segundoComponente /home/salabeta/daniKapi/segundoComponente/src /home/salabeta/daniKapi/segundoComponente /home/salabeta/daniKapi/segundoComponente/src /home/salabeta/daniKapi/segundoComponente/src/CMakeFiles/SegundoComponente.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/salabeta/DaniKapi/segundocomponente && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/salabeta/DaniKapi/segundocomponente /home/salabeta/DaniKapi/segundocomponente/src /home/salabeta/DaniKapi/segundocomponente /home/salabeta/DaniKapi/segundocomponente/src /home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/SegundoComponente.dir/depend
 

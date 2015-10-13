@@ -56,6 +56,10 @@ struct ListaMarcas
       lista.insert(mar.id, mar);
 	
     };
+    bool exists(int id)
+    {
+      return lista.contains(id);
+    }
     Marca get(int id){
       return lista.value(id);
     };
@@ -85,6 +89,11 @@ private:
   
   
   ListaMarcas marcas;
+   enum class State {INIT, SEARCH, ADVANCE, STOP};
+   State state = State::INIT;
+    int currentMark;
+   
+   void search();
   
 };
 

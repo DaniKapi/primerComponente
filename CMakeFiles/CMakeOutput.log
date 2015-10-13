@@ -308,3 +308,32 @@ int main(int argc, char** argv)
 #endif
 }
 
+Determining if the Q_WS_X11 exist passed with the following output:
+Change Dir: /home/salabeta/DaniKapi/segundocomponente/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec932112091/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec932112091.dir/build.make CMakeFiles/cmTryCompileExec932112091.dir/build
+make[1]: Entering directory '/home/salabeta/DaniKapi/segundocomponente/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec932112091.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec932112091.dir/CheckSymbolExists.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTryCompileExec932112091
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec932112091.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec932112091.dir/CheckSymbolExists.cxx.o  -o cmTryCompileExec932112091 -rdynamic 
+make[1]: Leaving directory '/home/salabeta/DaniKapi/segundocomponente/CMakeFiles/CMakeTmp'
+
+File /home/salabeta/DaniKapi/segundocomponente/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

@@ -24,6 +24,7 @@
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
   this->estado=0;
+  currentMark = 0;
 }
 
 void SpecificWorker::movimiento()
@@ -100,27 +101,49 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 void SpecificWorker::compute()
 {
-    this->movimiento();
-	switch(this->estado){
-	  case 0:
-	    moverAcero();
-	    this->estado++;
-	  break;
-	  case 1: 
-	    moverAuno();
-	    this->estado++;
-	  break;
-	  case 2:
-	    moverAdos();
-	    this->estado++;
-	    break;
-	  case 3:
-	    moverAtres();
-	    this->estado++;
-	  break;
-	}
+  
+    switch(state)
+    {
+      case State::INIT:
+	state = State::SEARCH;
+	break;
+      
+      case State::SEARCH: 
+	search();
+	break;
+
+      case State::ADVANCE:
+	movimiento();
+	break;
+	
+      case State::STOP:
+	
+      break;
+    }
     
 }
+
+void SpecificWorker::search()
+{
+  if( marcas.exists( currentMark ))
+  {
+    
+    /*Parar robot*/
+     differentialrobot_proxy->setSpeedBase(0, 0);
+     
+    /*Cambiar estado*/
+    state = State::ADVANCE;
+    
+    /*Return*/
+    return;
+    
+  }
+  
+  /*Girar*/ 
+   differentialrobot_proxy->setSpeedBase(0, 0.5);
+  
+}
+
 
 void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
 {
@@ -137,17 +160,18 @@ void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
 
 
 
+//////////////////////////////////////////////77777
+
 
 void SpecificWorker::newAprilTag(const tagsList& tags)
 {
+  
   for (auto t: tags){
     qDebug() << t.id;
     ListaMarcas::Marca x;
     this->copiar(t,x);
     marcas.add(x);
   }
-  
-  
   
 }
 

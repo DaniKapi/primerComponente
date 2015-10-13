@@ -1,1 +1,1 @@
-/home/salabeta/daniKapi/segundoComponente/src/CMakeFiles/SegundoComponente.dir
+/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir

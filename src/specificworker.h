@@ -35,11 +35,13 @@
 #include <innermodel/innermodel.h>
 
 
+
 struct ListaMarcas
   {
     typedef struct 
     {
       int id;
+      float distance;
       float tx;
       float ty;
       float tz;
@@ -58,11 +60,17 @@ struct ListaMarcas
     };
     bool exists(int id)
     {
+      QMutexLocker ml(&mutex);
       return lista.contains(id);
     }
     Marca get(int id){
+      QMutexLocker ml(&mutex);
       return lista.value(id);
-    };
+    }
+    void borrar(int id){
+      QMutexLocker ml(&mutex);
+      lista.remove(id);
+    }
   };
 
 class SpecificWorker : public GenericWorker
@@ -78,10 +86,8 @@ public:
 public slots:
 	void compute(); 	
 	void movimiento();
-	void moverAcero();
-	void moverAuno();
-	void moverAdos();
-	void moverAtres();
+	void parar();
+	float calcularDist(float x,float y);
 	void copiar(tag t, ListaMarcas::Marca &y);
 
 private:
@@ -91,8 +97,9 @@ private:
   ListaMarcas marcas;
    enum class State {INIT, SEARCH, ADVANCE, STOP};
    State state = State::INIT;
-    int currentMark;
-   
+   int currentMark;
+   int markread;
+   bool ostaculo;
    void search();
   
 };

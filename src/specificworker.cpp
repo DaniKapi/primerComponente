@@ -24,105 +24,56 @@
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
   this->estado=0;
-  currentMark = 0;
+  this->currentMark = 0;
 }
 
-void SpecificWorker::movimiento()
-{
-  const float threshold = 400; //millimeters -- Limite 
-    float der = 0.9;  //rads per second -- Gira a la derecha
-    float izq = -0.9;  //rads per second -- Gira a la izquierda
-    
-    static bool sentido=true;
-    
-    try
-    {
-        RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
-        std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
-
-    if( (ldata.data()+10)->dist < threshold)
-    {
-        std::cout << (ldata.data()+10)->dist << std::endl;
-        
-        if((ldata.data()+10)->angle > 0){
-            differentialrobot_proxy->setSpeedBase(5, izq);
-        }else{ 
-            differentialrobot_proxy->setSpeedBase(5, der);
-            
-        }
-        usleep(rand()%(1500000-100000 + 1) + 100000);  //random wait between 1.5s and 0.1sec
-    }
-    else
-    {
-        //float valor=(ldata.data()+10)->dist;  
-        
-        sentido=!sentido;
-        differentialrobot_proxy->setSpeedBase(250, 0);
-    }
-    
-    }
-    catch(const Ice::Exception &ex)
-    {
-        std::cout << ex << std::endl;
-    }
+float SpecificWorker::calcularDist(float x,float y){
+  float suma=(x*x)+(y*y);
+  return sqrt(suma);
+  
 }
-
-void SpecificWorker::moverAcero()
-{
-    std::cout<<"moviendo a cero"<<endl;
-}
-
-
-void SpecificWorker::moverAuno()
-{
-     std::cout<<"moviendo a uno"<<endl;
-}
-
-void SpecificWorker::moverAdos()
-{
-     std::cout<<"moviendo a dos"<<endl;
-}
-
-void SpecificWorker::moverAtres()
-{
-     std::cout<<"moviendo a tres"<<endl;
-}
-
-
-
 
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
-	
-	timer.start(Period);
-
-	return true;
+  timer.start(Period);
+  return true;
 }
 
-void SpecificWorker::compute()
+
+/********************************************************************************/
+
+void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
+{
+
+  y.id=t.id;
+  y.tx=t.tx;
+  y.ty=t.ty;
+  y.tz=t.tz;
+  y.rx=t.rx;
+  y.ry=t.ry;
+  y.rz=t.rz;
+
+}
+
+void SpecificWorker::newAprilTag(const tagsList& tags)
 {
   
-    switch(state)
-    {
-      case State::INIT:
-	state = State::SEARCH;
-	break;
-      
-      case State::SEARCH: 
-	search();
-	break;
-
-      case State::ADVANCE:
-	movimiento();
-	break;
-	
-      case State::STOP:
-	
-      break;
-    }
-    
+  for (auto t: tags){
+    qDebug() << t.id;
+    markread=t.id;
+    ListaMarcas::Marca x;
+    this->copiar(t,x);
+    marcas.add(x);
+  }
+  
 }
 
+
+
+/********************************************************************************/
+
+
+/*Gira hasta encontrar la marca*/
 void SpecificWorker::search()
 {
   if( marcas.exists( currentMark ))
@@ -144,35 +95,93 @@ void SpecificWorker::search()
   
 }
 
-
-void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
+/*Se mueve hacia la marca*/
+void SpecificWorker::movimiento()
 {
+    static bool sentido=true;
+    const float threshold = 400; //millimeters -- Limite 
+    float der = 0.9;  //rads per second -- Gira a la derecha
+    float izq = -0.9;  //rads per second -- Gira a la izquierda
+    std::cout<<"Quiero ir a: "<<currentMark<<std::endl;
+    try
+    {
+    if( marcas.exists(this->currentMark)){
+      ListaMarcas::Marca mar=marcas.get(this->currentMark);
+      float dist=calcularDist(mar.tx,mar.ty);
+      cout<<"Distancia: "<<dist <<endl;
+	if(dist<0.3){
+	  state = State::STOP;
+	  std::cout << "Cambiando a STOP" << std::endl;
+	  return;
+	}
+      }
 
-  y.id=t.id;
-  y.tx=t.tx;
-  y.ty=t.ty;
-  y.tz=t.tz;
-  y.rx=t.rx;
-  y.ry=t.ry;
-  y.rz=t.rz;
+   
+        RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
+        std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
 
+    if( (ldata.data()+10)->dist < threshold)
+    {   
+        if((ldata.data()+10)->angle > 0){
+            differentialrobot_proxy->setSpeedBase(5, izq);
+        }else{ 
+            differentialrobot_proxy->setSpeedBase(5, der);
+            
+        }
+        usleep(rand()%(1500000-100000 + 1) + 100000);  //random wait between 1.5s and 0.1sec
+	
+    }
+    else
+    {
+        sentido=!sentido;
+	if(markread!=currentMark){
+	  state = State::SEARCH;
+	  cout<<"cambiando a SEACH"<<endl;
+	  marcas.borrar(currentMark);
+	}else{
+	  differentialrobot_proxy->setSpeedBase(250, 0);
+	}
+    }
+    
+    }
+    catch(const Ice::Exception &ex)
+    {
+        std::cout << ex << std::endl;
+    }
 }
 
+/*El robot llega a la marca y se para*/
+void SpecificWorker::parar()
+{
+  differentialrobot_proxy->setSpeedBase(0, 0);
+  currentMark++;
+  cout<<"cambiando a INIT"<<endl;
+  state = State::INIT;
+}
 
-
-//////////////////////////////////////////////77777
-
-
-void SpecificWorker::newAprilTag(const tagsList& tags)
+/*bucle principal*/
+void SpecificWorker::compute()
 {
   
-  for (auto t: tags){
-    qDebug() << t.id;
-    ListaMarcas::Marca x;
-    this->copiar(t,x);
-    marcas.add(x);
-  }
-  
+    switch(state)
+    {
+      case State::INIT:
+	state = State::SEARCH;
+	break;
+      
+      case State::SEARCH: 
+	search();
+	break;
+
+      case State::ADVANCE:
+	movimiento();
+	break;
+	
+      case State::STOP:
+	parar();
+      break;
+    }
+    
 }
 
 

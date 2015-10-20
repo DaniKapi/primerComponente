@@ -34,8 +34,6 @@
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
 
-
-
 struct ListaMarcas
   {
     typedef struct 
@@ -92,7 +90,9 @@ public slots:
 
 private:
   int estado;
-  
+  InnerModel* inner;
+  //QVec goal(5);
+
   
   ListaMarcas marcas;
    enum class State {INIT, SEARCH, ADVANCE, STOP};

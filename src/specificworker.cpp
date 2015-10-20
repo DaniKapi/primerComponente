@@ -25,6 +25,7 @@ SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
   this->estado=0;
   this->currentMark = 0;
+  this->inner= new InnerModel("salabeta/robocomp/files/innermodel/simpleworld.xml");
 }
 
 float SpecificWorker::calcularDist(float x,float y){
@@ -82,8 +83,11 @@ void SpecificWorker::search()
     /*Parar robot*/
      differentialrobot_proxy->setSpeedBase(0, 0);
      
-    /*Cambiar estado*/
-    state = State::ADVANCE;
+     
+     differentialrobot_proxy->setSpeedBase(0, 0.5);
+     
+     
+     state = State::ADVANCE;
     
     /*Return*/
     return;
@@ -163,25 +167,29 @@ void SpecificWorker::parar()
 void SpecificWorker::compute()
 {
   
-    switch(state)
-    {
-      case State::INIT:
-	state = State::SEARCH;
-	break;
-      
-      case State::SEARCH: 
-	search();
-	break;
-
-      case State::ADVANCE:
-	movimiento();
-	break;
-	
-      case State::STOP:
-	parar();
+  TBaseState tbase;
+  differentialrobot_proxy->getBaseState(tbase);
+  inner->updateTransformValuesS("goal",tbase.x,0,tbase.z,0,tbase.alpha,0);
+  
+  switch(state)
+  {
+    case State::INIT:
+      state = State::SEARCH;
       break;
-    }
     
+    case State::SEARCH:
+      search();
+      break;
+
+    case State::ADVANCE:
+      movimiento();
+      break;
+      
+    case State::STOP:
+      parar();
+    break;
+  }
+  
 }
 
 

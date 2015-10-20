@@ -22,7 +22,7 @@ static const uint qt_meta_data_SpecificWorker[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -33,18 +33,16 @@ static const uint qt_meta_data_SpecificWorker[] = {
       16,   15,   15,   15, 0x0a,
       26,   15,   15,   15, 0x0a,
       39,   15,   15,   15, 0x0a,
-      52,   15,   15,   15, 0x0a,
-      64,   15,   15,   15, 0x0a,
-      76,   15,   15,   15, 0x0a,
-      93,   89,   15,   15, 0x0a,
+      57,   53,   47,   15, 0x0a,
+      87,   83,   15,   15, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_SpecificWorker[] = {
     "SpecificWorker\0\0compute()\0movimiento()\0"
-    "moverAcero()\0moverAuno()\0moverAdos()\0"
-    "moverAtres()\0t,y\0copiar(tag,ListaMarcas::Marca&)\0"
+    "parar()\0float\0x,y\0calcularDist(float,float)\0"
+    "t,y\0copiar(tag,ListaMarcas::Marca&)\0"
 };
 
 void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -55,11 +53,10 @@ void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->compute(); break;
         case 1: _t->movimiento(); break;
-        case 2: _t->moverAcero(); break;
-        case 3: _t->moverAuno(); break;
-        case 4: _t->moverAdos(); break;
-        case 5: _t->moverAtres(); break;
-        case 6: _t->copiar((*reinterpret_cast< tag(*)>(_a[1])),(*reinterpret_cast< ListaMarcas::Marca(*)>(_a[2]))); break;
+        case 2: _t->parar(); break;
+        case 3: { float _r = _t->calcularDist((*reinterpret_cast< float(*)>(_a[1])),(*reinterpret_cast< float(*)>(_a[2])));
+            if (_a[0]) *reinterpret_cast< float*>(_a[0]) = _r; }  break;
+        case 4: _t->copiar((*reinterpret_cast< tag(*)>(_a[1])),(*reinterpret_cast< ListaMarcas::Marca(*)>(_a[2]))); break;
         default: ;
         }
     }
@@ -97,9 +94,9 @@ int SpecificWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 5;
     }
     return _id;
 }

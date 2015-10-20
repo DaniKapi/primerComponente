@@ -1,3 +1,3 @@
 [Project]
-Manager=KDevCustomMakeManager
-Name=segundoComponente
+Manager=KDevCMakeManager
+Name=segundocomponente

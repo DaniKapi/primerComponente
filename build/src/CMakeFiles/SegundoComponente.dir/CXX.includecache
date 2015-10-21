@@ -134,10 +134,6 @@ AprilTags.h
 genericmonitor.h
 /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.h
 
-/home/salabeta/DaniKapi/segundocomponente/src/specificworker.cpp
-specificworker.h
-/home/salabeta/DaniKapi/segundocomponente/src/specificworker.h
-
 /home/salabeta/DaniKapi/segundocomponente/src/specificworker.h
 genericworker.h
 -

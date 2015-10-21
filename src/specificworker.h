@@ -22,20 +22,43 @@
        @author authorname
 */
 
-
-
-
-
-
-
 #ifndef SPECIFICWORKER_H
 #define SPECIFICWORKER_H
 
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
 
-struct ListaMarcas
+ 
+
+class SpecificWorker : public GenericWorker
+{
+  
+ 
+Q_OBJECT
+public:
+	SpecificWorker(MapPrx& mprx);	
+	~SpecificWorker();
+	bool setParams(RoboCompCommonBehavior::ParameterList params);
+	void newAprilTag(const tagsList &tags);
+	
+
+public slots:
+	void compute(); 	
+	
+private:
+  int estado;
+  InnerModel* inner;
+   
+  struct ListaMarcas
   {
+    ListaMarcas(){};
+    void setInner(InnerModel *inner_)
+    {
+      inner = inner_;
+      hayMemoria = false;
+    };
+    InnerModel *inner;
+      
     typedef struct 
     {
       int id;
@@ -50,11 +73,15 @@ struct ListaMarcas
     
     QMap<int,Marca> lista;
     QMutex mutex;
+    QVec memoria;
+    bool hayMemoria;
+    
     void add(Marca mar)
     {
       QMutexLocker ml(&mutex);
       lista.insert(mar.id, mar);
-	
+      memoria=inner->transform("world",QVec::vec3(mar.tx,0,mar.tz),"rgbd");
+      hayMemoria = true;
     };
     bool exists(int id)
     {
@@ -63,37 +90,30 @@ struct ListaMarcas
     }
     Marca get(int id){
       QMutexLocker ml(&mutex);
-      return lista.value(id);
+      
+      if(exists(id)) {
+	return lista.value(id);
+      } else {
+	Marca aux;
+	inner->transform("rgbd", memoria, "world");
+	aux.tx = memoria.x();
+	aux.tz = memoria.z();	
+	return aux;
+      }
     }
+      
     void borrar(int id){
       QMutexLocker ml(&mutex);
       lista.remove(id);
     }
   };
-
-class SpecificWorker : public GenericWorker
-{
-Q_OBJECT
-public:
-	SpecificWorker(MapPrx& mprx);	
-	~SpecificWorker();
-	bool setParams(RoboCompCommonBehavior::ParameterList params);
-	void newAprilTag(const tagsList &tags);
-	
-
-public slots:
-	void compute(); 	
-	void movimiento();
-	void parar();
+  
+  
+  void movimiento();
+  void parar();
 	float calcularDist(float x,float y);
 	void copiar(tag t, ListaMarcas::Marca &y);
 
-private:
-  int estado;
-  InnerModel* inner;
-  //QVec goal(5);
-
-  
   ListaMarcas marcas;
    enum class State {INIT, SEARCH, ADVANCE, STOP};
    State state = State::INIT;
@@ -101,7 +121,7 @@ private:
    int markread;
    bool ostaculo;
    void search();
-  
+   
 };
 
 #endif

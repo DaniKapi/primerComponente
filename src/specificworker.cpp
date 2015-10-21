@@ -25,7 +25,8 @@ SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
   this->estado=0;
   this->currentMark = 0;
-  this->inner= new InnerModel("salabeta/robocomp/files/innermodel/simpleworld.xml");
+  this->inner= new InnerModel("/home/salabeta/robocomp/files/innermodel/simpleworld.xml");
+  marcas.setInner(inner);
 }
 
 float SpecificWorker::calcularDist(float x,float y){
@@ -65,6 +66,7 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
     ListaMarcas::Marca x;
     this->copiar(t,x);
     marcas.add(x);
+   
   }
   
 }
@@ -82,10 +84,6 @@ void SpecificWorker::search()
     
     /*Parar robot*/
      differentialrobot_proxy->setSpeedBase(0, 0);
-     
-     
-     differentialrobot_proxy->setSpeedBase(0, 0.5);
-     
      
      state = State::ADVANCE;
     
@@ -143,7 +141,7 @@ void SpecificWorker::movimiento()
 	  cout<<"cambiando a SEACH"<<endl;
 	  marcas.borrar(currentMark);
 	}else{
-	  differentialrobot_proxy->setSpeedBase(250, 0);
+	  differentialrobot_proxy->setSpeedBase(500, 0);
 	}
     }
     
@@ -169,7 +167,7 @@ void SpecificWorker::compute()
   
   TBaseState tbase;
   differentialrobot_proxy->getBaseState(tbase);
-  inner->updateTransformValuesS("goal",tbase.x,0,tbase.z,0,tbase.alpha,0);
+  inner->updateTransformValuesS("base",tbase.x,0,tbase.z,0,tbase.alpha,0);
   
   switch(state)
   {

@@ -42,7 +42,7 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 }
 
 
-/********************************************************************************/
+/***************************** USANDO APRILTAGS ********************************/
 
 void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
 {
@@ -71,10 +71,9 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
   
 }
 
-
-
 /********************************************************************************/
 
+/********************** MÉTODOS DE LA MÁQUINA DE ESTADOS ************************/
 
 /*Gira hasta encontrar la marca*/
 void SpecificWorker::search()
@@ -82,19 +81,18 @@ void SpecificWorker::search()
   if( marcas.exists( currentMark ))
   {
     
-    /*Parar robot*/
-     differentialrobot_proxy->setSpeedBase(0, 0);
+     differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
      
-     state = State::ADVANCE;
+     state = State::ADVANCE;				// Cambiar el estado a avanzar
     
-    /*Return*/
     return;
     
   }
   
-  /*Girar*/ 
-   differentialrobot_proxy->setSpeedBase(0, 0.5);
-  
+   differentialrobot_proxy->setSpeedBase(0, 0.5);	// Girar mientras no encuentre la marca
+   
+   //TODO: Si no la encuentra dando una vuelta completa, que se de una vuelta por el mapa y se ponga a buscar.
+   
 }
 
 /*Se mueve hacia la marca*/
@@ -155,11 +153,16 @@ void SpecificWorker::movimiento()
 /*El robot llega a la marca y se para*/
 void SpecificWorker::parar()
 {
-  differentialrobot_proxy->setSpeedBase(0, 0);
-  currentMark++;
+  differentialrobot_proxy->setSpeedBase(0, 0);	//Para el robot
+  currentMark = (currentMark+1)%4;		//Actualiza la marca que está buscando
   cout<<"cambiando a INIT"<<endl;
-  state = State::INIT;
+  state = State::INIT;				//Vuelve al primer estado
 }
+
+
+
+/********************************************************************/
+
 
 /*bucle principal*/
 void SpecificWorker::compute()
@@ -189,16 +192,6 @@ void SpecificWorker::compute()
   }
   
 }
-
-
-
-/*
- * setSpeedBase
- * 
- * @param adv Advance speed in mm/seg
- * @param rot Turn speed in rads/seg
- * 
- */
 
 /**
 * \brief Default destructor

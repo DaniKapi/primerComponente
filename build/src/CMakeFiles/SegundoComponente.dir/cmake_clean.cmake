@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "ui_mainUI.h"
   "CMakeFiles/SegundoComponente.dir/specificworker.cpp.o"
   "CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o"
+  "CMakeFiles/SegundoComponente.dir/listamarca.cpp.o"
   "CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
   "CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
   "CMakeFiles/SegundoComponente.dir/main.cpp.o"

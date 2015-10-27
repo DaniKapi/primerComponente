@@ -387,6 +387,30 @@ home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s:
 	cd /home/salabeta/DaniKapi/segundocomponente && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
 .PHONY : home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
 
+listamarca.o: listamarca.cpp.o
+.PHONY : listamarca.o
+
+# target to build an object file
+listamarca.cpp.o:
+	cd /home/salabeta/DaniKapi/segundocomponente && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o
+.PHONY : listamarca.cpp.o
+
+listamarca.i: listamarca.cpp.i
+.PHONY : listamarca.i
+
+# target to preprocess a source file
+listamarca.cpp.i:
+	cd /home/salabeta/DaniKapi/segundocomponente && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.i
+.PHONY : listamarca.cpp.i
+
+listamarca.s: listamarca.cpp.s
+.PHONY : listamarca.s
+
+# target to generate assembly for a file
+listamarca.cpp.s:
+	cd /home/salabeta/DaniKapi/segundocomponente && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.s
+.PHONY : listamarca.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -645,6 +669,9 @@ help:
 	@echo "... home/salabeta/robocomp/classes/rapplication/rapplication.o"
 	@echo "... home/salabeta/robocomp/classes/rapplication/rapplication.i"
 	@echo "... home/salabeta/robocomp/classes/rapplication/rapplication.s"
+	@echo "... listamarca.o"
+	@echo "... listamarca.i"
+	@echo "... listamarca.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

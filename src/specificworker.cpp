@@ -23,6 +23,7 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
+  marcas = new ListaMarca();
   this->estado=0;
   this->currentMark = 0;
   this->inner= new InnerModel("/home/salabeta/robocomp/files/innermodel/simpleworld.xml");
@@ -32,7 +33,6 @@ SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 float SpecificWorker::calcularDist(float x,float y){
   float suma=(x*x)+(y*y);
   return sqrt(suma);
-  
 }
 
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
@@ -44,7 +44,7 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 
 /***************************** USANDO APRILTAGS ********************************/
 
-void SpecificWorker::copiar(tag t, ListaMarcas::Marca& y)
+void SpecificWorker::copiar(tag t, ListaMarca::Marca& y)
 {
 
   y.id=t.id;
@@ -63,7 +63,7 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
   for (auto t: tags){
     qDebug() << t.id;
     markread=t.id;
-    ListaMarcas::Marca x;
+    ListaMarca::Marca x;
     this->copiar(t,x);
     marcas.add(x);
    
@@ -78,6 +78,7 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 /*Gira hasta encontrar la marca*/
 void SpecificWorker::search()
 {
+
   if( marcas.exists( currentMark ))
   {
     
@@ -98,6 +99,7 @@ void SpecificWorker::search()
 /*Se mueve hacia la marca*/
 void SpecificWorker::movimiento()
 {
+    printf("hola-movimiento");
     static bool sentido=true;
     const float threshold = 400; //millimeters -- Limite 
     float der = 0.9;  //rads per second -- Gira a la derecha
@@ -105,43 +107,42 @@ void SpecificWorker::movimiento()
     std::cout<<"Quiero ir a: "<<currentMark<<std::endl;
     try
     {
-    if( marcas.exists(this->currentMark)){
-      ListaMarcas::Marca mar=marcas.get(this->currentMark);
-      float dist=calcularDist(mar.tx,mar.ty);
-      cout<<"Distancia: "<<dist <<endl;
-	if(dist<0.3){
-	  state = State::STOP;
-	  std::cout << "Cambiando a STOP" << std::endl;
-	  return;
+      if(marcas.exists(this->currentMark)){
+      printf("hola-movimiento2");
+	ListaMarca::Marca mar=marcas.get(this->currentMark);
+	float dist=calcularDist(mar.tx,mar.ty);
+	cout<<"Distancia: "<<dist <<endl;
+	  if(dist<0.3){
+	    state = State::STOP;
+	    std::cout << "Cambiando a STOP" << std::endl;
+	    return;
+	  }
 	}
+	RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
+	std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
+
+      if( (ldata.data()+10)->dist < threshold)
+      {   
+	  if((ldata.data()+10)->angle > 0){
+	      differentialrobot_proxy->setSpeedBase(5, izq);
+	  }else{ 
+	      differentialrobot_proxy->setSpeedBase(5, der);
+	      
+	  }
+	  usleep(rand()%(1500000-100000 + 1) + 100000);  //random wait between 1.5s and 0.1sec
+	  
       }
-
-   
-        RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
-        std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
-
-    if( (ldata.data()+10)->dist < threshold)
-    {   
-        if((ldata.data()+10)->angle > 0){
-            differentialrobot_proxy->setSpeedBase(5, izq);
-        }else{ 
-            differentialrobot_proxy->setSpeedBase(5, der);
-            
-        }
-        usleep(rand()%(1500000-100000 + 1) + 100000);  //random wait between 1.5s and 0.1sec
-	
-    }
-    else
-    {
-        sentido=!sentido;
-	if(markread!=currentMark){
-	  state = State::SEARCH;
-	  cout<<"cambiando a SEACH"<<endl;
-	  marcas.borrar(currentMark);
-	}else{
-	  differentialrobot_proxy->setSpeedBase(500, 0);
-	}
-    }
+      else
+      {
+	  sentido=!sentido;
+	  if(markread!=currentMark){
+	    state = State::SEARCH;
+	    cout<<"cambiando a SEACH"<<endl;
+	    marcas.borrar(currentMark);
+	  }else{
+	    differentialrobot_proxy->setSpeedBase(500, 0);
+	  }
+      }
     
     }
     catch(const Ice::Exception &ex)

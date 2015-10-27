@@ -158,9 +158,32 @@ src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.provides: src/CMakeFi
 
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o
 
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: ../src/listamarca.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o"
+	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/listamarca.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/listamarca.cpp
+
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/listamarca.cpp.i"
+	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/DaniKapi/segundocomponente/src/listamarca.cpp > CMakeFiles/SegundoComponente.dir/listamarca.cpp.i
+
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/listamarca.cpp.s"
+	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/DaniKapi/segundocomponente/src/listamarca.cpp -o CMakeFiles/SegundoComponente.dir/listamarca.cpp.s
+
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.requires:
+.PHONY : src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.requires
+
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.provides: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.provides.build
+.PHONY : src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.provides
+
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o
+
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o -c /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
 
@@ -183,7 +206,7 @@ src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication
 
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o -c /home/salabeta/robocomp/classes/qlog/qlog.cpp
 
@@ -206,7 +229,7 @@ src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cp
 
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/main.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/main.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/main.cpp
 
@@ -229,7 +252,7 @@ src/CMakeFiles/SegundoComponente.dir/main.cpp.o.provides.build: src/CMakeFiles/S
 
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: ../src/genericmonitor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.cpp
 
@@ -252,7 +275,7 @@ src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: ../src/commonbehaviorI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.cpp
 
@@ -275,7 +298,7 @@ src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o.provides.build: src/C
 
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: ../src/genericworker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/genericworker.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/genericworker.cpp
 
@@ -298,7 +321,7 @@ src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o.provides.build: src/CMa
 
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: ../src/apriltagsI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.cpp
 
@@ -321,7 +344,7 @@ src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o: src/CommonBehavior.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/CommonBehavior.cpp
 
@@ -344,7 +367,7 @@ src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/DifferentialRobot.cpp
 
@@ -367,7 +390,7 @@ src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o.provides.build: src
 
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o: src/Laser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/Laser.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/Laser.cpp
 
@@ -390,7 +413,7 @@ src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o: src/AprilTags.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/AprilTags.cpp
 
@@ -413,7 +436,7 @@ src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/moc_specificworker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/moc_specificworker.cxx
 
@@ -436,7 +459,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o.provides.build: sr
 
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/moc_specificmonitor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/moc_specificmonitor.cxx
 
@@ -459,7 +482,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o.provides.build: s
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/moc_genericmonitor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/moc_genericmonitor.cxx
 
@@ -482,7 +505,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o.provides.build: sr
 
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/moc_commonbehaviorI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/moc_commonbehaviorI.cxx
 
@@ -505,7 +528,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o.provides.build: s
 
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/moc_genericworker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/moc_genericworker.cxx
 
@@ -528,7 +551,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o.provides.build: src
 
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/moc_apriltagsI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/segundocomponente/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o"
 	cd /home/salabeta/DaniKapi/segundocomponente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o -c /home/salabeta/DaniKapi/segundocomponente/build/src/moc_apriltagsI.cxx
 
@@ -553,6 +576,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o.provides.build: src/CM
 SegundoComponente_OBJECTS = \
 "CMakeFiles/SegundoComponente.dir/specificworker.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o" \
+"CMakeFiles/SegundoComponente.dir/listamarca.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/main.cpp.o" \
@@ -576,6 +600,7 @@ SegundoComponente_EXTERNAL_OBJECTS =
 
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o
+../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/main.cpp.o
@@ -612,6 +637,7 @@ src/CMakeFiles/SegundoComponente.dir/build: ../bin/SegundoComponente
 
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.requires
+src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/main.cpp.o.requires

@@ -3,6 +3,7 @@
 SET ( SOURCES
   specificworker.cpp
   specificmonitor.cpp
+  listamarca.cpp
 #  $ENV{ROBOCOMP}/classes/agmInner/agmInner.cpp
 )
 
@@ -10,6 +11,7 @@ SET ( SOURCES
 SET ( HEADERS
   specificworker.h
   specificmonitor.h
+
 #  $ENV{ROBOCOMP}/classes/agmInner/agmInner.h
 )
 

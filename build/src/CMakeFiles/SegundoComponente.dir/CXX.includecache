@@ -94,6 +94,16 @@ DifferentialRobot.h
 AprilTags.h
 -
 
+/home/salabeta/DaniKapi/segundocomponente/src/listamarca.cpp
+listamarca.h
+/home/salabeta/DaniKapi/segundocomponente/src/listamarca.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/listamarca.h
+genericworker.h
+-
+innermodel/innermodel.h
+-
+
 /home/salabeta/DaniKapi/segundocomponente/src/main.cpp
 QtCore
 -
@@ -134,11 +144,17 @@ AprilTags.h
 genericmonitor.h
 /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.h
 
+/home/salabeta/DaniKapi/segundocomponente/src/specificworker.cpp
+specificworker.h
+/home/salabeta/DaniKapi/segundocomponente/src/specificworker.h
+
 /home/salabeta/DaniKapi/segundocomponente/src/specificworker.h
 genericworker.h
 -
 innermodel/innermodel.h
 -
+listamarca.h
+/home/salabeta/DaniKapi/segundocomponente/src/listamarca.h
 
 /home/salabeta/robocomp/classes/qlog/qlog.h
 QtCore

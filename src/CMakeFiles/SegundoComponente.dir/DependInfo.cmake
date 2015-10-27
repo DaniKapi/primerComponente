@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/salabeta/DaniKapi/segundocomponente/src/genericworker.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o"
   "/home/salabeta/robocomp/classes/qlog/qlog.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
   "/home/salabeta/robocomp/classes/rapplication/rapplication.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
+  "/home/salabeta/DaniKapi/segundocomponente/src/listamarca.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/main.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/main.cpp.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/moc_apriltagsI.cxx" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/moc_commonbehaviorI.cxx" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o"

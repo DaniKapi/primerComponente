@@ -35,6 +35,8 @@ CommonBehavior.h
 -
 Laser.h
 -
+Controller.h
+-
 DifferentialRobot.h
 -
 AprilTags.h
@@ -89,14 +91,12 @@ CommonBehavior.h
 -
 Laser.h
 -
+Controller.h
+-
 DifferentialRobot.h
 -
 AprilTags.h
 -
-
-/home/salabeta/DaniKapi/segundocomponente/src/listamarca.cpp
-listamarca.h
-/home/salabeta/DaniKapi/segundocomponente/src/listamarca.h
 
 /home/salabeta/DaniKapi/segundocomponente/src/listamarca.h
 genericworker.h
@@ -138,6 +138,8 @@ DifferentialRobot.h
 Laser.h
 -
 AprilTags.h
+-
+Controller.h
 -
 
 /home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.h
@@ -4169,6 +4171,38 @@ Ice/UndefSysMacros.h
 -
 
 src/CommonBehavior.h
+Ice/ProxyF.h
+-
+Ice/ObjectF.h
+-
+Ice/Exception.h
+-
+Ice/LocalObject.h
+-
+Ice/StreamHelpers.h
+-
+Ice/Proxy.h
+-
+Ice/Object.h
+-
+Ice/Outgoing.h
+-
+Ice/OutgoingAsync.h
+-
+Ice/Incoming.h
+-
+Ice/Direct.h
+-
+IceUtil/ScopedArray.h
+-
+IceUtil/Optional.h
+-
+Ice/StreamF.h
+-
+Ice/UndefSysMacros.h
+-
+
+src/Controller.h
 Ice/ProxyF.h
 -
 Ice/ObjectF.h

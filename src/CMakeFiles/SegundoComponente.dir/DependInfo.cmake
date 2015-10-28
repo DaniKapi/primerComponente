@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/salabeta/DaniKapi/segundocomponente/src/AprilTags.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/CommonBehavior.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o"
+  "/home/salabeta/DaniKapi/segundocomponente/src/Controller.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/Controller.cpp.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/DifferentialRobot.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/Laser.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/Laser.cpp.o"
   "/home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.cpp" "/home/salabeta/DaniKapi/segundocomponente/src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o"
@@ -41,6 +42,7 @@ set(CMAKE_TARGET_DEFINITIONS
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/salabeta/DaniKapi/segundocomponente/src/AprilTags.h" "/home/salabeta/DaniKapi/segundocomponente/src/AprilTags.cpp"
   "/home/salabeta/DaniKapi/segundocomponente/src/CommonBehavior.h" "/home/salabeta/DaniKapi/segundocomponente/src/CommonBehavior.cpp"
+  "/home/salabeta/DaniKapi/segundocomponente/src/Controller.h" "/home/salabeta/DaniKapi/segundocomponente/src/Controller.cpp"
   "/home/salabeta/DaniKapi/segundocomponente/src/DifferentialRobot.h" "/home/salabeta/DaniKapi/segundocomponente/src/DifferentialRobot.cpp"
   "/home/salabeta/DaniKapi/segundocomponente/src/Laser.h" "/home/salabeta/DaniKapi/segundocomponente/src/Laser.cpp"
   )

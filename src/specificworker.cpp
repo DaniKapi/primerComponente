@@ -23,7 +23,7 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
-  marcas = new ListaMarca();
+  //marcas = new ListaMarca();
   this->estado=0;
   this->currentMark = 0;
   this->inner= new InnerModel("/home/salabeta/robocomp/files/innermodel/simpleworld.xml");
@@ -75,6 +75,11 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 
 /********************** MÉTODOS DE LA MÁQUINA DE ESTADOS ************************/
 
+void SpecificWorker::controller()
+{
+ controller_proxy->stop(); 
+}
+
 /*Gira hasta encontrar la marca*/
 void SpecificWorker::search()
 {
@@ -84,7 +89,7 @@ void SpecificWorker::search()
     
      differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
      
-     state = State::ADVANCE;				// Cambiar el estado a avanzar
+     state = State::CONTROLLER;				// Cambiar el estado a avanzar
     
     return;
     
@@ -99,7 +104,9 @@ void SpecificWorker::search()
 /*Se mueve hacia la marca*/
 void SpecificWorker::movimiento()
 {
-    printf("hola-movimiento");
+  
+  
+  
     static bool sentido=true;
     const float threshold = 400; //millimeters -- Limite 
     float der = 0.9;  //rads per second -- Gira a la derecha
@@ -108,7 +115,6 @@ void SpecificWorker::movimiento()
     try
     {
       if(marcas.exists(this->currentMark)){
-      printf("hola-movimiento2");
 	ListaMarca::Marca mar=marcas.get(this->currentMark);
 	float dist=calcularDist(mar.tx,mar.ty);
 	cout<<"Distancia: "<<dist <<endl;
@@ -118,8 +124,9 @@ void SpecificWorker::movimiento()
 	    return;
 	  }
 	}
-	RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
-	std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
+      
+      RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
+      std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
 
       if( (ldata.data()+10)->dist < threshold)
       {   
@@ -189,7 +196,10 @@ void SpecificWorker::compute()
       
     case State::STOP:
       parar();
-    break;
+      break;
+    case State::CONTROLLER:
+      controller();
+      break;
   }
   
 }

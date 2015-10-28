@@ -6,6 +6,40 @@
 
 #IncludeRegexTransform: 
 
+/home/salabeta/DaniKapi/segundocomponente/src/Controller.cpp
+Controller.h
+-
+Ice/LocalException.h
+-
+Ice/ObjectFactory.h
+-
+Ice/BasicStream.h
+-
+Ice/Object.h
+-
+IceUtil/Iterator.h
+-
+
+/home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.cpp
+apriltagsI.h
+/home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.h
+QtCore/QObject
+-
+Ice/Ice.h
+-
+AprilTags.h
+-
+config.h
+-
+genericworker.h
+/home/salabeta/DaniKapi/segundocomponente/src/genericworker.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.cpp
+commonbehaviorI.h
+/home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.h
+
 /home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.h
 QtCore/QObject
 -
@@ -22,6 +56,10 @@ genericmonitor.h
 
 /home/salabeta/DaniKapi/segundocomponente/src/config.h
 
+/home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.cpp
+genericmonitor.h
+/home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.h
+
 /home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.h
 Ice/Ice.h
 -
@@ -35,6 +73,10 @@ qlog/qlog.h
 -
 CommonBehavior.h
 -
+
+/home/salabeta/DaniKapi/segundocomponente/src/genericworker.cpp
+genericworker.h
+/home/salabeta/DaniKapi/segundocomponente/src/genericworker.h
 
 /home/salabeta/DaniKapi/segundocomponente/src/genericworker.h
 config.h
@@ -50,6 +92,8 @@ ui_mainUI.h
 CommonBehavior.h
 -
 Laser.h
+-
+Controller.h
 -
 DifferentialRobot.h
 -
@@ -101,10 +145,36 @@ Laser.h
 -
 AprilTags.h
 -
+Controller.h
+-
+
+/home/salabeta/DaniKapi/segundocomponente/src/moc_apriltagsI.cxx
+apriltagsI.h
+/home/salabeta/DaniKapi/segundocomponente/src/apriltagsI.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/moc_commonbehaviorI.cxx
+commonbehaviorI.h
+/home/salabeta/DaniKapi/segundocomponente/src/commonbehaviorI.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/moc_genericmonitor.cxx
+genericmonitor.h
+/home/salabeta/DaniKapi/segundocomponente/src/genericmonitor.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/moc_genericworker.cxx
+genericworker.h
+/home/salabeta/DaniKapi/segundocomponente/src/genericworker.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/moc_specificmonitor.cxx
+specificmonitor.h
+/home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.h
 
 /home/salabeta/DaniKapi/segundocomponente/src/moc_specificworker.cxx
 specificworker.h
 /home/salabeta/DaniKapi/segundocomponente/src/specificworker.h
+
+/home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.cpp
+specificmonitor.h
+/home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.h
 
 /home/salabeta/DaniKapi/segundocomponente/src/specificmonitor.h
 genericmonitor.h
@@ -4166,6 +4236,38 @@ Ice/StreamF.h
 Ice/UndefSysMacros.h
 -
 
+src/Controller.h
+Ice/ProxyF.h
+-
+Ice/ObjectF.h
+-
+Ice/Exception.h
+-
+Ice/LocalObject.h
+-
+Ice/StreamHelpers.h
+-
+Ice/Proxy.h
+-
+Ice/Object.h
+-
+Ice/Outgoing.h
+-
+Ice/OutgoingAsync.h
+-
+Ice/Incoming.h
+-
+Ice/Direct.h
+-
+IceUtil/ScopedArray.h
+-
+IceUtil/Optional.h
+-
+Ice/StreamF.h
+-
+Ice/UndefSysMacros.h
+-
+
 src/DifferentialRobot.h
 Ice/ProxyF.h
 -
@@ -4264,6 +4366,8 @@ ui_mainUI.h
 CommonBehavior.h
 -
 Laser.h
+-
+Controller.h
 -
 DifferentialRobot.h
 -

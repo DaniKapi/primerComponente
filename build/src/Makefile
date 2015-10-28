@@ -205,6 +205,30 @@ CommonBehavior.cpp.s:
 	cd /home/salabeta/DaniKapi/segundocomponente/build && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.s
 .PHONY : CommonBehavior.cpp.s
 
+Controller.o: Controller.cpp.o
+.PHONY : Controller.o
+
+# target to build an object file
+Controller.cpp.o:
+	cd /home/salabeta/DaniKapi/segundocomponente/build && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/Controller.cpp.o
+.PHONY : Controller.cpp.o
+
+Controller.i: Controller.cpp.i
+.PHONY : Controller.i
+
+# target to preprocess a source file
+Controller.cpp.i:
+	cd /home/salabeta/DaniKapi/segundocomponente/build && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/Controller.cpp.i
+.PHONY : Controller.cpp.i
+
+Controller.s: Controller.cpp.s
+.PHONY : Controller.s
+
+# target to generate assembly for a file
+Controller.cpp.s:
+	cd /home/salabeta/DaniKapi/segundocomponente/build && $(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/Controller.cpp.s
+.PHONY : Controller.cpp.s
+
 DifferentialRobot.o: DifferentialRobot.cpp.o
 .PHONY : DifferentialRobot.o
 
@@ -656,6 +680,9 @@ help:
 	@echo "... CommonBehavior.o"
 	@echo "... CommonBehavior.i"
 	@echo "... CommonBehavior.s"
+	@echo "... Controller.o"
+	@echo "... Controller.i"
+	@echo "... Controller.s"
 	@echo "... DifferentialRobot.o"
 	@echo "... DifferentialRobot.i"
 	@echo "... DifferentialRobot.s"

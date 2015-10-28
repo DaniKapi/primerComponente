@@ -7,6 +7,9 @@ src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o
  /home/salabeta/DaniKapi/segundocomponente/build/src/CommonBehavior.cpp
  src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/Controller.cpp.o
+ /home/salabeta/DaniKapi/segundocomponente/build/src/Controller.cpp
+ src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o
  /home/salabeta/DaniKapi/segundocomponente/build/src/DifferentialRobot.cpp
  src/DifferentialRobot.h
@@ -447,6 +450,7 @@ src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -884,6 +888,7 @@ src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -1320,6 +1325,7 @@ src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -1755,6 +1761,7 @@ src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -2556,6 +2563,7 @@ src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -3013,6 +3021,7 @@ src/CMakeFiles/SegundoComponente.dir/main.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -3449,6 +3458,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -3886,6 +3896,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -4322,6 +4333,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -4757,6 +4769,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -5194,6 +5207,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -5646,6 +5660,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -6083,6 +6098,7 @@ src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h
@@ -6535,6 +6551,7 @@ src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o
  /usr/include/qt4/QtGui/qwsembedwidget.h
  src/AprilTags.h
  src/CommonBehavior.h
+ src/Controller.h
  src/DifferentialRobot.h
  src/Laser.h
  src/ui_mainUI.h

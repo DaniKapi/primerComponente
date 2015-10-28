@@ -7,6 +7,9 @@ src/CMakeFiles/SegundoComponente.dir/AprilTags.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o: src/CommonBehavior.cpp
 src/CMakeFiles/SegundoComponente.dir/CommonBehavior.cpp.o: src/CommonBehavior.h
 
+src/CMakeFiles/SegundoComponente.dir/Controller.cpp.o: src/Controller.cpp
+src/CMakeFiles/SegundoComponente.dir/Controller.cpp.o: src/Controller.h
+
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.cpp
 src/CMakeFiles/SegundoComponente.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.h
 
@@ -446,6 +449,7 @@ src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: /usr/include/qt4/QtGui/qw
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/apriltagsI.cpp.o: src/ui_mainUI.h
@@ -883,6 +887,7 @@ src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: /usr/include/qt4/QtG
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o: src/ui_mainUI.h
@@ -1319,6 +1324,7 @@ src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: /usr/include/qt4/QtGu
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o: src/ui_mainUI.h
@@ -1754,6 +1760,7 @@ src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: /usr/include/qt4/QtGui
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o: src/ui_mainUI.h
@@ -2555,6 +2562,7 @@ src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: /usr/include/qt4/QtGui/qw
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o: src/ui_mainUI.h
@@ -3012,6 +3020,7 @@ src/CMakeFiles/SegundoComponente.dir/main.cpp.o: /usr/include/qt4/QtGui/qworkspa
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/ui_mainUI.h
@@ -3448,6 +3457,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: /usr/include/qt4/QtGu
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o: src/ui_mainUI.h
@@ -3885,6 +3895,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: /usr/include/qt4
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/moc_commonbehaviorI.cxx.o: src/ui_mainUI.h
@@ -4321,6 +4332,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: /usr/include/qt4/
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericmonitor.cxx.o: src/ui_mainUI.h
@@ -4756,6 +4768,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: /usr/include/qt4/Q
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o: src/ui_mainUI.h
@@ -5193,6 +5206,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: /usr/include/qt4
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o: src/ui_mainUI.h
@@ -5645,6 +5659,7 @@ src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: /usr/include/qt4/
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o: src/ui_mainUI.h
@@ -6082,6 +6097,7 @@ src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: /usr/include/qt4/QtG
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o: src/ui_mainUI.h
@@ -6534,6 +6550,7 @@ src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: /usr/include/qt4/QtGu
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: /usr/include/qt4/QtGui/qwsembedwidget.h
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/AprilTags.h
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/CommonBehavior.h
+src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/Controller.h
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/DifferentialRobot.h
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/Laser.h
 src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o: src/ui_mainUI.h

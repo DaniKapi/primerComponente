@@ -1,6 +1,7 @@
 # Hashes of file build rules.
 316842f28f2cb0203422de6a744528d9 src/AprilTags.cpp
 9989bda20c071f89396229f2ec505822 src/CommonBehavior.cpp
+e8e78c4777b7cb55bc8e9f4c148eede7 src/Controller.cpp
 b0379fbf00a1e63239485b55f8c7103d src/DifferentialRobot.cpp
 75ce39f7564a2da4fcdcbc47bf158c26 src/Laser.cpp
 571a6ce5ebc443d05bc6a6b36d77975a src/moc_apriltagsI.cxx

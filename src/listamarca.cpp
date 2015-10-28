@@ -17,7 +17,7 @@
 
 #include "listamarca.h"
 
-public ListaMarca::ListaMarca() {
+ListaMarca::ListaMarca() {
   
 }
 
@@ -43,15 +43,15 @@ bool ListaMarca::exists(int id)
 
 ListaMarca::Marca ListaMarca::get(int id)
 {
-  QMutexLocker ml(&mutex);
-
   if(exists(id)){
+    QMutexLocker ml(&mutex);
     return lista.value(id);
   } else {
+    QMutexLocker ml(&mutex);
     Marca aux;
     inner->transform("rgbd", memoria, "world");
     aux.tx = memoria.x();
-    aux.tz = memoria.z();	
+    aux.tz = memoria.z();
     return aux;
   }
 }

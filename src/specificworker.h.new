@@ -22,45 +22,33 @@
        @author authorname
 */
 
+
+
+
+
+
+
 #ifndef SPECIFICWORKER_H
 #define SPECIFICWORKER_H
 
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
-#include "listamarca.h"
 
 class SpecificWorker : public GenericWorker
 {
-  
- 
 Q_OBJECT
 public:
-    SpecificWorker(MapPrx& mprx);	
-    ~SpecificWorker();
-    bool setParams(RoboCompCommonBehavior::ParameterList params);
-    void newAprilTag(const tagsList &tags);
-	
+	SpecificWorker(MapPrx& mprx);	
+	~SpecificWorker();
+	bool setParams(RoboCompCommonBehavior::ParameterList params);
+
+	void newAprilTag(const tagsList &tags);
 
 public slots:
-    void compute(); 	
-	
-private:
-  int estado;
-  InnerModel* inner;
-  void movimiento();
-  void parar();
-  void controller();
-  float calcularDist(float x,float y);
-  void copiar(tag t, ListaMarca::Marca &y);
+	void compute(); 	
 
-  ListaMarca marcas;
-  enum class State {INIT, SEARCH, ADVANCE, STOP, CONTROLLER};
-  State state = State::INIT;
-  int currentMark;
-  int markread;
-  bool ostaculo;
-  void search();
-  
+private:
+	
 };
 
 #endif

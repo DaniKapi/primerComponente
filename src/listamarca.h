@@ -38,7 +38,7 @@ public:
     float rz;
   } Marca;
   
-  public ListaMarca(); 
+  ListaMarca(); 
   void add(Marca mar);
   Marca get(int id);
   bool exists(int id);

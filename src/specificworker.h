@@ -46,7 +46,9 @@ public slots:
 	
 private:
   int estado;
+  
   InnerModel* inner;
+  int vueltas;
   void movimiento();
   void parar();
   void controller();

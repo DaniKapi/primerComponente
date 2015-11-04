@@ -1,6 +1,19 @@
 [Buildset]
 BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00"\x00s\x00e\x00g\x00u\x00n\x00d\x00o\x00c\x00o\x00m\x00p\x00o\x00n\x00e\x00n\x00t\x00e)
 
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/salabeta/DaniKapi/segundocomponente/build
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=
+
 [Defines And Includes][Compiler]
 Name=GCC
 Path=gcc

@@ -25,7 +25,7 @@ SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
   //marcas = new ListaMarca();
   this->estado=0;
-  this->currentMark = 0;
+  this->currentMark = 1;
   this->inner= new InnerModel("/home/salabeta/robocomp/files/innermodel/simpleworld.xml");
   marcas.setInner(inner);
 }
@@ -77,24 +77,48 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 
 void SpecificWorker::controller()
 {
- controller_proxy->stop(); 
+  TargetPose coordenadas;
+  NavState estadoController;
+  try{
+    estadoController=controller_proxy->getState();
+    cout<<"el estado es: "<<estadoController.state<<endl;
+    if(estadoController.state=="IDLE" || estadoController.state=="WORKING" ){
+				  // Cambiar el estado a avanzar
+	  cout<<"enviando marcas"<<endl;
+	  ListaMarca::Marca marcaMundo = marcas.get(currentMark);
+	  QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,0,marcaMundo.tz),"rgbd");
+	  coordenadas.x=vec.x();
+	  coordenadas.y=vec.z();
+	  controller_proxy->go(coordenadas);
+    }
+    else if(estadoController.state=="FINISH")
+    {
+      
+      
+      state = State::STOP;
+    }
+      
+  }catch(const Ice::Exception &ex)
+    {
+        std::cout << ex << std::endl;
+    }
 }
 
 /*Gira hasta encontrar la marca*/
 void SpecificWorker::search()
 {
-
+  
   if( marcas.exists( currentMark ))
   {
     
      differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
-     
-     state = State::CONTROLLER;				// Cambiar el estado a avanzar
+     cout<<"cambiando a estado controler"<<endl;
+     state = State::CONTROLLER;	
     
     return;
     
   }
-  
+   
    differentialrobot_proxy->setSpeedBase(0, 0.5);	// Girar mientras no encuentre la marca
    
    //TODO: Si no la encuentra dando una vuelta completa, que se de una vuelta por el mapa y se ponga a buscar.

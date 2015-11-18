@@ -64,7 +64,7 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 {
   
   for (auto t: tags){
-    qDebug() << t.id;
+    //qDebug() << t.id;
     markread=t.id;
     ListaMarca::Marca x;
     this->copiar(t,x);
@@ -80,24 +80,19 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 
 void SpecificWorker::controller()
 {
-  NavState estadoController;
-  try{
-    estadoController = controller_proxy->getState();
-    cout<<"El estado del controlador es: "<<estadoController.state<<endl;
-    if(estadoController.state=="IDLE" ){//|| estadoController.state=="WORKING" ){
-	  qDebug("Enviando marcas al controlador");
-	  ListaMarca::Marca marcaMundo = marcas.get(currentMark);
-	  QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz),"rgbd");
-	  qDebug() << vec;
-	  TargetPose t = {vec.x(), vec.y(), vec.z()};
-	  controller_proxy->go(t);
-    }
-    else if(estadoController.state=="FINISH")
-    {
-      state = State::STOP;
-    }
-  }catch(const Ice::Exception &ex)
-    {
+    try{
+      NavState estadoController = controller_proxy->getState();
+      if(estadoController.state=="IDLE"){
+	    qDebug("Enviando marcas al controlador");
+	    ListaMarca::Marca marcaMundo = marcas.get(currentMark);
+	    QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz),"rgbd");
+	    TargetPose tp = {vec.x(), vec.y(), vec.z()};
+	    controller_proxy->go(tp);
+      }
+      else if(estadoController.state=="FINISH"){
+	state = State::STOP;
+      }
+    }catch(const Ice::Exception &ex){
         std::cout << ex << std::endl;
     }
 }
@@ -105,27 +100,26 @@ void SpecificWorker::controller()
 /*Gira hasta encontrar la marca*/
 void SpecificWorker::search()
 {
+  static bool primeraVuelta = true;
   
-  if( marcas.exists( currentMark ))
-  {
-    
+  if( marcas.exists(currentMark)) {
      differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
      state = State::CONTROLLER;	
-     
      qDebug() <<"Cambiado a estado: Controller";
-    
-    return;
-    
+     primeraVuelta = true;
+     return;
   }
-   
-   differentialrobot_proxy->setSpeedBase(0, 0.5);	// Girar mientras no encuentre la marca
-   
-   //TODO: Si no la encuentra dando una vuelta completa, que se de una vuelta por el mapa y se ponga a buscar.
-   
+  
+  if(primeraVuelta){
+    differentialrobot_proxy->setSpeedBase(0, 0.5);	// Girar mientras no encuentre la marca
+    primeraVuelta = false;
+  }
+  
 }
 
+
 /*Se mueve hacia la marca*/
-void SpecificWorker::movimiento()
+/*void SpecificWorker::movimiento()
 { 
     static bool sentido=true;
     const float threshold = 400; //millimeters -- Limite 
@@ -176,7 +170,7 @@ void SpecificWorker::movimiento()
     {
         std::cout << ex << std::endl;
     }
-}
+}*/
 
 /*El robot llega a la marca y se para*/
 void SpecificWorker::parar()
@@ -209,16 +203,17 @@ void SpecificWorker::compute()
     case State::SEARCH:
       search();
       break;
-
-    case State::ADVANCE:
-      movimiento();
-      break;
-      
-    case State::STOP:
-      parar();
-      break;
+    
     case State::CONTROLLER:
       controller();
+      break;
+
+    /*case State::ADVANCE:
+      movimiento();
+      break; */
+    
+    case State::STOP:
+      parar();
       break;
   }
   

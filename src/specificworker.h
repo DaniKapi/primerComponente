@@ -49,7 +49,7 @@ private:
   
   InnerModel* inner;
   int vueltas;
-  void movimiento();
+  //void movimiento();
   void parar();
   void controller();
   float calcularDist(float x,float y);

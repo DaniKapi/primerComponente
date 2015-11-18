@@ -15,6 +15,9 @@
  *
  *    You should have received a copy of the GNU General Public License
  *    along with RoboComp.  If not, see <http://www.gnu.org/licenses/>.
+ * 
+ * 	COMPONENT
+ * 
  */
 #include "specificworker.h"
 
@@ -80,24 +83,24 @@ void SpecificWorker::controller()
   TargetPose coordenadas;
   NavState estadoController;
   try{
-    estadoController=controller_proxy->getState();
+    qDebug("Se ha imprimido");
+    estadoController = controller_proxy->getState();
+    qDebug("Se ha imprimido?");
     cout<<"el estado es: "<<estadoController.state<<endl;
+    qDebug("Se ha imprimido??");
     if(estadoController.state=="IDLE" || estadoController.state=="WORKING" ){
-				  // Cambiar el estado a avanzar
-	  cout<<"enviando marcas"<<endl;
+	  qDebug("Enviando marcas al controller");
 	  ListaMarca::Marca marcaMundo = marcas.get(currentMark);
 	  QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,0,marcaMundo.tz),"rgbd");
+	  qDebug() << "Marca x: " << vec.x() << " z: " << vec.z() << endl;
 	  coordenadas.x=vec.x();
-	  coordenadas.y=vec.z();
+	  coordenadas.z=vec.z();
 	  controller_proxy->go(coordenadas);
     }
     else if(estadoController.state=="FINISH")
     {
-      
-      
       state = State::STOP;
     }
-      
   }catch(const Ice::Exception &ex)
     {
         std::cout << ex << std::endl;
@@ -112,8 +115,9 @@ void SpecificWorker::search()
   {
     
      differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
-     cout<<"cambiando a estado controler"<<endl;
      state = State::CONTROLLER;	
+     
+     qDebug() <<"Cambiado a estado: Controller";
     
     return;
     

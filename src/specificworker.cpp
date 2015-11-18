@@ -80,22 +80,17 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 
 void SpecificWorker::controller()
 {
-  TargetPose coordenadas;
   NavState estadoController;
   try{
-    qDebug("Se ha imprimido");
     estadoController = controller_proxy->getState();
-    qDebug("Se ha imprimido?");
-    cout<<"el estado es: "<<estadoController.state<<endl;
-    qDebug("Se ha imprimido??");
-    if(estadoController.state=="IDLE" || estadoController.state=="WORKING" ){
-	  qDebug("Enviando marcas al controller");
+    cout<<"El estado del controlador es: "<<estadoController.state<<endl;
+    if(estadoController.state=="IDLE" ){//|| estadoController.state=="WORKING" ){
+	  qDebug("Enviando marcas al controlador");
 	  ListaMarca::Marca marcaMundo = marcas.get(currentMark);
-	  QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,0,marcaMundo.tz),"rgbd");
-	  qDebug() << "Marca x: " << vec.x() << " z: " << vec.z() << endl;
-	  coordenadas.x=vec.x();
-	  coordenadas.z=vec.z();
-	  controller_proxy->go(coordenadas);
+	  QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz),"rgbd");
+	  qDebug() << vec;
+	  TargetPose t = {vec.x(), vec.y(), vec.z()};
+	  controller_proxy->go(t);
     }
     else if(estadoController.state=="FINISH")
     {
@@ -131,10 +126,7 @@ void SpecificWorker::search()
 
 /*Se mueve hacia la marca*/
 void SpecificWorker::movimiento()
-{
-  
-  
-  
+{ 
     static bool sentido=true;
     const float threshold = 400; //millimeters -- Limite 
     float der = 0.9;  //rads per second -- Gira a la derecha

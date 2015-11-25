@@ -28,7 +28,7 @@ SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
   //marcas = new ListaMarca();
   this->estado=0;
-  this->currentMark = 1;
+  this->currentMark = 0;
   this->inner= new InnerModel("/home/salabeta/robocomp/files/innermodel/simpleworld.xml");
   marcas.setInner(inner);
 }
@@ -62,7 +62,6 @@ void SpecificWorker::copiar(tag t, ListaMarca::Marca& y)
 
 void SpecificWorker::newAprilTag(const tagsList& tags)
 {
-  
   for (auto t: tags){
     //qDebug() << t.id;
     markread=t.id;
@@ -85,9 +84,14 @@ void SpecificWorker::controller()
       if(estadoController.state=="IDLE"){
 	    qDebug("Enviando marcas al controlador");
 	    ListaMarca::Marca marcaMundo = marcas.get(currentMark);
-	    QVec vec=inner->transform("world",QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz),"rgbd");
+	    inner->transform("world","base").print("base en el mundo");
+	    QVec m = QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz);
+	    m.print("marca");
+	    QVec vec=inner->transform("world", m, "rgbd");
+	    vec.print("marca en mundo");
+	    
 	    TargetPose tp = {vec.x(), vec.y(), vec.z()};
-	    controller_proxy->go(tp);
+ 	    controller_proxy->go(tp);
       }
       else if(estadoController.state=="FINISH"){
 	state = State::STOP;

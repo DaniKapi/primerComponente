@@ -120,6 +120,7 @@ void SpecificWorker::search()
 /*El robot llega a la marca y se para*/
 void SpecificWorker::parar()
 {
+  qDebug() << "Parado";
   differentialrobot_proxy->setSpeedBase(0, 0);	//Para el robot
   currentMark = (currentMark+1)%4;		//Actualiza la marca que está buscando
   state = State::INIT;				//Vuelve al primer estado

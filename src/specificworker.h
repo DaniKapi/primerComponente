@@ -32,7 +32,6 @@
 class SpecificWorker : public GenericWorker
 {
   
- 
 Q_OBJECT
 public:
     SpecificWorker(MapPrx& mprx);	
@@ -45,23 +44,19 @@ public slots:
     void compute(); 	
 	
 private:
-  int estado;
-  
   InnerModel* inner;
-  int vueltas;
-  //void movimiento();
-  void parar();
-  void controller();
-  float calcularDist(float x,float y);
-  void copiar(tag t, ListaMarca::Marca &y);
-
-  ListaMarca marcas;
-  enum class State {INIT, SEARCH, ADVANCE, STOP, CONTROLLER};
+  enum class State {INIT, SEARCH, STOP, CONTROLLER};
   State state = State::INIT;
+  ListaMarca marcas;
   int currentMark;
-  int markread;
-  bool ostaculo;
+  
+  void copiar(tag t, ListaMarca::Marca &y);  
+  float calcularDist(float x,float y);
+
+  
   void search();
+  void controller();
+  void parar();
   
 };
 

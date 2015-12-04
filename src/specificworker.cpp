@@ -26,8 +26,6 @@
 */
 SpecificWorker::SpecificWorker(MapPrx& mprx) : GenericWorker(mprx)
 {
-  //marcas = new ListaMarca();
-  this->estado=0;
   this->currentMark = 0;
   this->inner= new InnerModel("/home/salabeta/robocomp/files/innermodel/simpleworld.xml");
   marcas.setInner(inner);
@@ -63,8 +61,6 @@ void SpecificWorker::copiar(tag t, ListaMarca::Marca& y)
 void SpecificWorker::newAprilTag(const tagsList& tags)
 {
   for (auto t: tags){
-    //qDebug() << t.id;
-    markread=t.id;
     ListaMarca::Marca x;
     this->copiar(t,x);
     marcas.add(x);
@@ -121,73 +117,13 @@ void SpecificWorker::search()
   
 }
 
-
-/*Se mueve hacia la marca*/
-/*void SpecificWorker::movimiento()
-{ 
-    static bool sentido=true;
-    const float threshold = 400; //millimeters -- Limite 
-    float der = 0.9;  //rads per second -- Gira a la derecha
-    float izq = -0.9;  //rads per second -- Gira a la izquierda
-    std::cout<<"Quiero ir a: "<<currentMark<<std::endl;
-    try
-    {
-      if(marcas.exists(this->currentMark)){
-	ListaMarca::Marca mar=marcas.get(this->currentMark);
-	float dist=calcularDist(mar.tx,mar.ty);
-	cout<<"Distancia: "<<dist <<endl;
-	  if(dist<0.3){
-	    state = State::STOP;
-	    std::cout << "Cambiando a STOP" << std::endl;
-	    return;
-	  }
-	}
-      
-      RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();  //read laser data 
-      std::sort( ldata.begin()+10, ldata.end()-10, [](RoboCompLaser::TData a, RoboCompLaser::TData b){ return     a.dist < b.dist; }) ;  //sort laser data from small to large distances using a lambda function.
-
-      if( (ldata.data()+10)->dist < threshold)
-      {   
-	  if((ldata.data()+10)->angle > 0){
-	      differentialrobot_proxy->setSpeedBase(5, izq);
-	  }else{ 
-	      differentialrobot_proxy->setSpeedBase(5, der);
-	      
-	  }
-	  usleep(rand()%(1500000-100000 + 1) + 100000);  //random wait between 1.5s and 0.1sec
-	  
-      }
-      else
-      {
-	  sentido=!sentido;
-	  if(markread!=currentMark){
-	    state = State::SEARCH;
-	    cout<<"cambiando a SEACH"<<endl;
-	    marcas.borrar(currentMark);
-	  }else{
-	    differentialrobot_proxy->setSpeedBase(500, 0);
-	  }
-      }
-    
-    }
-    catch(const Ice::Exception &ex)
-    {
-        std::cout << ex << std::endl;
-    }
-}*/
-
 /*El robot llega a la marca y se para*/
 void SpecificWorker::parar()
 {
   differentialrobot_proxy->setSpeedBase(0, 0);	//Para el robot
   currentMark = (currentMark+1)%4;		//Actualiza la marca que está buscando
-  cout<<"cambiando a INIT"<<endl;
   state = State::INIT;				//Vuelve al primer estado
 }
-
-
-
-/********************************************************************/
 
 
 /*bucle principal*/
@@ -195,9 +131,17 @@ void SpecificWorker::compute()
 {
   
   TBaseState tbase;
-  differentialrobot_proxy->getBaseState(tbase);
-  inner->updateTransformValuesS("base",tbase.x,0,tbase.z,0,tbase.alpha,0);
   
+  try
+  {  
+    differentialrobot_proxy->getBaseState(tbase);
+    inner->updateTransformValuesS("base",tbase.x,0,tbase.z,0,tbase.alpha,0);
+  }
+  catch(const Ice::Exception e)
+  {
+      std::cout << e << std::endl;
+  }
+    
   switch(state)
   {
     case State::INIT:
@@ -212,10 +156,6 @@ void SpecificWorker::compute()
       controller();
       break;
 
-    /*case State::ADVANCE:
-      movimiento();
-      break; */
-    
     case State::STOP:
       parar();
       break;

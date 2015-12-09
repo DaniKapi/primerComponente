@@ -64,7 +64,6 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
     ListaMarca::Marca x;
     this->copiar(t,x);
     marcas.add(x);
-   
   }
   
 }
@@ -78,14 +77,8 @@ void SpecificWorker::controller()
     try{
       NavState estadoController = controller_proxy->getState();
       if(estadoController.state=="IDLE"){
-	    qDebug("Enviando marcas al controlador");
 	    ListaMarca::Marca marcaMundo = marcas.get(currentMark);
-	    inner->transform("world","base").print("base en el mundo");
-	    QVec m = QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz);
-	    m.print("marca");
-	    QVec vec=inner->transform("world", m, "rgbd");
-	    vec.print("marca en mundo");
-	    
+	    QVec vec=inner->transform("world", QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz), "rgbd");
 	    TargetPose tp = {vec.x(), vec.y(), vec.z()};
  	    controller_proxy->go(tp);
       }

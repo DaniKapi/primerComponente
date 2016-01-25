@@ -1,4 +1,4 @@
-# Install script for directory: /home/salabeta/DaniKapi/segundocomponente
+# Install script for directory: /home/salabeta/DaniKapi/componente
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,12 +41,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/opt/robocomp/etc-default" TYPE FILE RENAME "SegundoComponente.conf" FILES "/home/salabeta/DaniKapi/segundocomponente/etc/config")
+file(INSTALL DESTINATION "/opt/robocomp/etc-default" TYPE FILE RENAME "SegundoComponente.conf" FILES "/home/salabeta/DaniKapi/componente/etc/config")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/salabeta/DaniKapi/segundocomponente/src/cmake_install.cmake")
+  include("/home/salabeta/DaniKapi/componente/src/cmake_install.cmake")
 
 endif()
 
@@ -56,7 +56,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/salabeta/DaniKapi/segundocomponente/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/salabeta/DaniKapi/componente/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/salabeta/DaniKapi/segundocomponente/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/salabeta/DaniKapi/componente/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

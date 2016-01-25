@@ -62,7 +62,9 @@ void SpecificWorker::newAprilTag(const tagsList& tags)
 {
   for (auto t: tags){
     ListaMarca::Marca x;
+    qDebug () << "tag: " << t.tx << " " << t.ty << " " << t.tz;
     this->copiar(t,x);
+    qDebug () << "marca: " << x.tx << " " << x.ty << " " << x.tz;
     marcas.add(x);
   }
   
@@ -76,7 +78,7 @@ void SpecificWorker::controller()
 {
     try{
       NavState estadoController = controller_proxy->getState();
-      if(estadoController.state=="IDLE"){
+      if(estadoController.state=="IDLE" || estadoController.state=="WORKING"){
 	    ListaMarca::Marca marcaMundo = marcas.get(currentMark);
 	    QVec vec=inner->transform("world", QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz), "rgbd");
 	    TargetPose tp = {vec.x(), vec.y(), vec.z()};
@@ -116,6 +118,7 @@ void SpecificWorker::parar()
   qDebug() << "Parado";
   differentialrobot_proxy->setSpeedBase(0, 0);	//Para el robot
   currentMark = (currentMark+1)%4;		//Actualiza la marca que está buscando
+  qDebug() << "Buscando: " << currentMark;
   state = State::INIT;				//Vuelve al primer estado
 }
 
@@ -147,7 +150,7 @@ void SpecificWorker::compute()
       break;
     
     case State::CONTROLLER:
-      controller();
+      //controller();
       break;
 
     case State::STOP:

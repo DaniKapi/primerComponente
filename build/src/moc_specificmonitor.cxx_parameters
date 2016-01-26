@@ -9,9 +9,9 @@
 -I/classes
 -I/home/salabeta/DaniKapi/componente/build
 -I/home/salabeta/DaniKapi/componente/src/.
--I/home/salabeta/robocomp/classes
--I/home/salabeta/robocomp/libs
--I/home/salabeta/robocomp/interfaces
+-I/opt/robocomp//classes
+-I/opt/robocomp//libs
+-I/opt/robocomp//interfaces
 -I/home/salabeta/DaniKapi/componente/build
 -I/include
 -I/usr/include/qt4

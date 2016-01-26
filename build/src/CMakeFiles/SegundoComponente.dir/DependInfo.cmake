@@ -13,8 +13,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/salabeta/DaniKapi/componente/src/commonbehaviorI.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o"
   "/home/salabeta/DaniKapi/componente/src/genericmonitor.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o"
   "/home/salabeta/DaniKapi/componente/src/genericworker.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/genericworker.cpp.o"
-  "/home/salabeta/robocomp/classes/qlog/qlog.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
-  "/home/salabeta/robocomp/classes/rapplication/rapplication.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
   "/home/salabeta/DaniKapi/componente/src/listamarca.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o"
   "/home/salabeta/DaniKapi/componente/src/main.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/main.cpp.o"
   "/home/salabeta/DaniKapi/componente/build/src/moc_apriltagsI.cxx" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/moc_apriltagsI.cxx.o"
@@ -23,6 +21,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/salabeta/DaniKapi/componente/build/src/moc_genericworker.cxx" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/moc_genericworker.cxx.o"
   "/home/salabeta/DaniKapi/componente/build/src/moc_specificmonitor.cxx" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/moc_specificmonitor.cxx.o"
   "/home/salabeta/DaniKapi/componente/build/src/moc_specificworker.cxx" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/moc_specificworker.cxx.o"
+  "/opt/robocomp/classes/qlog/qlog.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o"
+  "/opt/robocomp/classes/rapplication/rapplication.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
   "/home/salabeta/DaniKapi/componente/src/specificmonitor.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o"
   "/home/salabeta/DaniKapi/componente/src/specificworker.cpp" "/home/salabeta/DaniKapi/componente/build/src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o"
   )
@@ -63,9 +63,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/robocomp/include"
   "/classes"
   "."
-  "/home/salabeta/robocomp/classes"
-  "/home/salabeta/robocomp/libs"
-  "/home/salabeta/robocomp/interfaces"
+  "/opt/robocomp/classes"
+  "/opt/robocomp/libs"
+  "/opt/robocomp/interfaces"
   "/include"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

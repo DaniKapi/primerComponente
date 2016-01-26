@@ -52,35 +52,35 @@ include src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
+	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 
 src/DifferentialRobot.cpp: /opt/robocomp/interfaces/DifferentialRobot.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating DifferentialRobot.cpp and DifferentialRobot.h from DifferentialRobot.ice"
-	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
+	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
 
 src/DifferentialRobot.h: src/DifferentialRobot.cpp
 
 src/Laser.cpp: /opt/robocomp/interfaces/Laser.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Laser.cpp and Laser.h from Laser.ice"
-	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Laser.ice --output-dir .
+	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Laser.ice --output-dir .
 
 src/Laser.h: src/Laser.cpp
 
 src/AprilTags.cpp: /opt/robocomp/interfaces/AprilTags.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AprilTags.cpp and AprilTags.h from AprilTags.ice"
-	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AprilTags.ice --output-dir .
+	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AprilTags.ice --output-dir .
 
 src/AprilTags.h: src/AprilTags.cpp
 
 src/Controller.cpp: /opt/robocomp/interfaces/Controller.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Controller.cpp and Controller.h from Controller.ice"
-	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/home/salabeta/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Controller.ice --output-dir .
+	cd /home/salabeta/DaniKapi/componente/build/src && slice2cpp -I/opt/robocomp///interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Controller.ice --output-dir .
 
 src/Controller.h: src/Controller.cpp
 
@@ -188,51 +188,51 @@ src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.provides: src/CMakeFiles/S
 
 src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o: /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o: /opt/robocomp/classes/rapplication/rapplication.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o -c /home/salabeta/robocomp/classes/rapplication/rapplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o -c /opt/robocomp/classes/rapplication/rapplication.cpp
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.i
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i"
+	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /opt/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.i
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.s
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s"
+	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /opt/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.s
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires:
-.PHONY : src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires:
+.PHONY : src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
-.PHONY : src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
+.PHONY : src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o: /home/salabeta/robocomp/classes/qlog/qlog.cpp
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o: /opt/robocomp/classes/qlog/qlog.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/salabeta/DaniKapi/componente/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o"
-	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o -c /home/salabeta/robocomp/classes/qlog/qlog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o"
+	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o -c /opt/robocomp/classes/qlog/qlog.cpp
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i"
-	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/salabeta/robocomp/classes/qlog/qlog.cpp > CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.i
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.i"
+	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /opt/robocomp/classes/qlog/qlog.cpp > CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.i
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s"
-	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/salabeta/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.s
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.s"
+	cd /home/salabeta/DaniKapi/componente/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /opt/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.s
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires:
-.PHONY : src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires:
+.PHONY : src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides.build
-.PHONY : src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/SegundoComponente.dir/build.make src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides.build
+.PHONY : src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides
 
-src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o
+src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o
 
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: src/CMakeFiles/SegundoComponente.dir/flags.make
 src/CMakeFiles/SegundoComponente.dir/main.cpp.o: ../src/main.cpp
@@ -607,8 +607,8 @@ SegundoComponente_OBJECTS = \
 "CMakeFiles/SegundoComponente.dir/specificworker.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/listamarca.cpp.o" \
-"CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o" \
-"CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o" \
+"CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o" \
+"CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/main.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o" \
 "CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o" \
@@ -632,8 +632,8 @@ SegundoComponente_EXTERNAL_OBJECTS =
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o
-../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o
-../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o
+../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o
+../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/main.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o
 ../bin/SegundoComponente: src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o
@@ -670,8 +670,8 @@ src/CMakeFiles/SegundoComponente.dir/build: ../bin/SegundoComponente
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/specificworker.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/specificmonitor.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/listamarca.cpp.o.requires
-src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/rapplication/rapplication.cpp.o.requires
-src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/home/salabeta/robocomp/classes/qlog/qlog.cpp.o.requires
+src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o.requires
+src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/opt/robocomp/classes/qlog/qlog.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/main.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/genericmonitor.cpp.o.requires
 src/CMakeFiles/SegundoComponente.dir/requires: src/CMakeFiles/SegundoComponente.dir/commonbehaviorI.cpp.o.requires

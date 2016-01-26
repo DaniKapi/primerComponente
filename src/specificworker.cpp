@@ -78,10 +78,13 @@ void SpecificWorker::controller()
 {
     try{
       NavState estadoController = controller_proxy->getState();
-      if(estadoController.state=="IDLE" || estadoController.state=="WORKING"){
+      if(estadoController.state=="IDLE"){
 	    ListaMarca::Marca marcaMundo = marcas.get(currentMark);
+	    //qDebug () << "marca1: " << marcaMundo.tx << " " << marcaMundo.tx << " " << marcaMundo.tz;
 	    QVec vec=inner->transform("world", QVec::vec3(marcaMundo.tx,marcaMundo.ty,marcaMundo.tz), "rgbd");
 	    TargetPose tp = {vec.x(), vec.y(), vec.z()};
+	    //QVec m = QVec::vec3(tp.x, tp.y, tp.z);
+	    //m.print("marca2");
  	    controller_proxy->go(tp);
       }
       else if(estadoController.state=="FINISH"){
@@ -97,16 +100,30 @@ void SpecificWorker::search()
 {
   static bool primeraVuelta = true;
   
-  if( marcas.exists(currentMark)) {
-     differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
-     state = State::CONTROLLER;	
-     qDebug() <<"Cambiado a estado: Controller";
-     primeraVuelta = true;
-     return;
+  if(marcas.exists(currentMark)) {
+    try
+    {
+      differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
+    }
+    catch(const Ice::Exception e)
+    {
+      std::cout << e << std::endl;
+    }
+    state = State::CONTROLLER;	
+    qDebug() <<"Cambiado a estado: Controller";
+    primeraVuelta = true;
+    return;
   }
   
   if(primeraVuelta){
-    differentialrobot_proxy->setSpeedBase(0, 0.5);	// Girar mientras no encuentre la marca
+    try
+    {
+      differentialrobot_proxy->setSpeedBase(0, 0);	// Parar el robot
+    }
+    catch(const Ice::Exception e)
+    {
+      std::cout << e << std::endl;
+    }
     primeraVuelta = false;
   }
   
@@ -138,7 +155,7 @@ void SpecificWorker::compute()
   {
       std::cout << e << std::endl;
   }
-    
+  
   switch(state)
   {
     case State::INIT:
@@ -150,7 +167,7 @@ void SpecificWorker::compute()
       break;
     
     case State::CONTROLLER:
-      //controller();
+      controller();
       break;
 
     case State::STOP:

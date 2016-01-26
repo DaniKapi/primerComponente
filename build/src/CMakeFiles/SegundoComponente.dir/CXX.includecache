@@ -48,7 +48,7 @@ innermodel/innermodel.h
 listamarca.h
 /home/salabeta/DaniKapi/componente/src/listamarca.h
 
-/home/salabeta/robocomp/classes/qlog/qlog.h
+/opt/robocomp/classes/qlog/qlog.h
 QtCore
 -
 iostream
